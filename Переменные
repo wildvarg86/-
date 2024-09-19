@@ -1,0 +1,4 @@
+K_V_DZ = 12
+K_Z_CH = 1.5
+name_course = 'Python'
+print('Курс:',name_course+',','всего задач:',K_V_DZ,', затрачено часов:',K_Z_CH,', среднее время выполнения',K_Z_CH/K_V_DZ, 'часа.' )
