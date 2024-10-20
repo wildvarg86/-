@@ -1,0 +1,14 @@
+def single_root_words(root_word, *other_words:str):
+    same_words = []
+    other_words = list(other_words)
+    for str_ in other_words:
+        str_ = str_.lower()
+        root_word = root_word.lower()
+        if root_word in str_ or str_ in root_word:
+            same_words.append(str_)
+    return same_words
+
+
+
+print(single_root_words('rich', 'richiest', 'orichalcum', 'cheers', 'richies'))
+print(single_root_words('Disablement', 'Able', 'Mable', 'Disable', 'Bagel'))
